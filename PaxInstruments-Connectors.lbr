@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11,6 +11,16 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -26,9 +36,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -42,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -70,10 +80,99 @@ The latest version of this library can be downloaded from https://github.com/Pax
 &lt;br&gt;&lt;br&gt;
 &lt;b&gt;Licensing&lt;/b&gt;: To the extent possible under law, Pax Instruments has waived all copyright and related or neighboring rights to Pax Instruments Connectors Eagle Libraries. This work is published from: United States. For further information see http://creativecommons.org/about/cc0</description>
 <packages>
+<package name="POGO-2.54-6P">
+<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$2" x="2.54" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$3" x="5.08" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$4" x="7.62" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$5" x="10.16" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$6" x="12.7" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="13.97" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-1.27" x2="13.97" y2="1.27" width="0.127" layer="21"/>
+<wire x1="13.97" y1="1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<hole x="1.27" y="1" drill="0.6"/>
+<hole x="11.43" y="-1" drill="0.6"/>
+</package>
+<package name="POGO-2.54-2P">
+<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$2" x="2.54" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<wire x1="-1.27" y1="1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<hole x="1.27" y="1" drill="0.6"/>
+<hole x="1.27" y="-1" drill="0.6"/>
+</package>
 </packages>
 <symbols>
+<symbol name="POGO_PIN">
+<wire x1="0.635" y1="-7.112" x2="-0.635" y2="-7.112" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="-7.112" x2="0.635" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="-2.54" x2="-0.635" y2="-7.112" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="-5.588" x2="-0.381" y2="-5.334" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="-5.334" x2="0.381" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="-5.08" x2="-0.381" y2="-4.826" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="-4.826" x2="0.381" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="-4.572" x2="-0.381" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="-4.318" x2="0.381" y2="-4.064" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="-4.064" x2="-0.381" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="-3.81" x2="0.381" y2="-3.556" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="-3.556" x2="-0.381" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="-3.302" x2="0.381" y2="-3.048" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-7.747" x2="-0.508" y2="-7.747" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="-7.747" x2="-0.508" y2="-8.255" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="-8.255" x2="0" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="0" y1="-8.89" x2="0.508" y2="-8.255" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-8.255" x2="0.508" y2="-7.747" width="0.1524" layer="94"/>
+<rectangle x1="-0.381" y1="-7.747" x2="0.381" y2="-7.112" layer="94"/>
+<pin name="TP" x="0" y="0" visible="off" length="short" direction="in" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="POGO-2.54-6P">
+<gates>
+<gate name="G$1" symbol="POGO_PIN" x="0" y="0"/>
+<gate name="G$2" symbol="POGO_PIN" x="2.54" y="0"/>
+<gate name="G$3" symbol="POGO_PIN" x="5.08" y="0"/>
+<gate name="G$4" symbol="POGO_PIN" x="7.62" y="0"/>
+<gate name="G$5" symbol="POGO_PIN" x="10.16" y="0"/>
+<gate name="G$6" symbol="POGO_PIN" x="12.7" y="0"/>
+</gates>
+<devices>
+<device name="" package="POGO-2.54-6P">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
+<connect gate="G$2" pin="TP" pad="P$2"/>
+<connect gate="G$3" pin="TP" pad="P$3"/>
+<connect gate="G$4" pin="TP" pad="P$4"/>
+<connect gate="G$5" pin="TP" pad="P$5"/>
+<connect gate="G$6" pin="TP" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POGO-2.54-2P">
+<gates>
+<gate name="G$1" symbol="POGO_PIN" x="0" y="0"/>
+<gate name="G$2" symbol="POGO_PIN" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="POGO-2.54-2P">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
+<connect gate="G$2" pin="TP" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
