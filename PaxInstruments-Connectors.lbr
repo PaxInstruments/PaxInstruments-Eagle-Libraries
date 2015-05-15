@@ -214,6 +214,74 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <rectangle x1="-5.536" y1="-5.715" x2="-0.964" y2="-4.318" layer="16"/>
 <rectangle x1="0.964" y1="-5.715" x2="5.536" y2="-4.318" layer="16"/>
 </package>
+<package name="FH12-12S-1SH">
+<wire x1="-7.795" y1="0.5" x2="-8.295" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="-8.295" y1="0.5" x2="-8.295" y2="-0.77" width="0.2032" layer="51"/>
+<wire x1="-8.295" y1="-0.77" x2="-7.795" y2="-0.77" width="0.2032" layer="51"/>
+<wire x1="-7.795" y1="-0.77" x2="-7.795" y2="-2.27" width="0.2032" layer="51"/>
+<wire x1="-7.795" y1="-2.27" x2="-7.795" y2="-3.17" width="0.2032" layer="51"/>
+<wire x1="-7.8" y1="-3.17" x2="-7.5" y2="-3.17" width="0.2032" layer="21"/>
+<wire x1="-7.5" y1="-3.17" x2="-7.5" y2="-3.47" width="0.2032" layer="21"/>
+<wire x1="-7.5" y1="-3.47" x2="-7.8" y2="-3.47" width="0.2032" layer="21"/>
+<wire x1="-7.8" y1="-3.47" x2="-7.8" y2="-4.37" width="0.2032" layer="21"/>
+<wire x1="7.8" y1="-4.37" x2="7.8" y2="-3.47" width="0.2032" layer="21"/>
+<wire x1="7.8" y1="-3.47" x2="7.5" y2="-3.47" width="0.2032" layer="21"/>
+<wire x1="7.5" y1="-3.47" x2="7.5" y2="-3.17" width="0.2032" layer="21"/>
+<wire x1="7.5" y1="-3.17" x2="7.8" y2="-3.17" width="0.2032" layer="21"/>
+<wire x1="7.795" y1="-3.17" x2="7.795" y2="-2.27" width="0.2032" layer="51"/>
+<wire x1="7.795" y1="-2.27" x2="7.795" y2="-0.77" width="0.2032" layer="51"/>
+<wire x1="7.795" y1="-0.77" x2="8.295" y2="-0.77" width="0.2032" layer="51"/>
+<wire x1="8.295" y1="-0.77" x2="8.295" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="8.295" y1="0.5" x2="7.795" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="7.795" y1="0.5" x2="7.795" y2="1.23" width="0.2032" layer="51"/>
+<wire x1="7.795" y1="1.23" x2="-7.795" y2="1.23" width="0.2032" layer="51"/>
+<wire x1="-7.795" y1="1.23" x2="-7.795" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="7.5" y1="-3.17" x2="-7.5" y2="-3.17" width="0.2032" layer="21"/>
+<wire x1="7.8" y1="-4.37" x2="-7.8" y2="-4.37" width="0.2032" layer="21"/>
+<wire x1="-6.1" y1="1.23" x2="-7.8" y2="1.23" width="0.2032" layer="21"/>
+<wire x1="7.8" y1="1.23" x2="6.1" y2="1.23" width="0.2032" layer="21"/>
+<wire x1="-7.8" y1="-1.5" x2="-7.8" y2="-3.17" width="0.2032" layer="21"/>
+<wire x1="7.8" y1="-3.17" x2="7.8" y2="-1.5" width="0.2032" layer="21"/>
+<smd name="1" x="-5.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="2" x="-4.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="3" x="-3.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="4" x="-2.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="5" x="-1.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="6" x="-0.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="7" x="0.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="8" x="1.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="9" x="2.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="10" x="3.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="11" x="4.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<smd name="12" x="5.5" y="2.2975" dx="0.5" dy="1.5" layer="1"/>
+<text x="-7.3676" y="3.46" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.3676" y="-2.8658" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-5.6" y1="1.28" x2="-5.4" y2="2.13" layer="51"/>
+<rectangle x1="-4.6" y1="1.28" x2="-4.4" y2="2.13" layer="51"/>
+<rectangle x1="-3.6" y1="1.28" x2="-3.4" y2="2.13" layer="51"/>
+<rectangle x1="-2.6" y1="1.28" x2="-2.4" y2="2.13" layer="51"/>
+<rectangle x1="-1.6" y1="1.28" x2="-1.4" y2="2.13" layer="51"/>
+<rectangle x1="-0.6" y1="1.28" x2="-0.4" y2="2.13" layer="51"/>
+<rectangle x1="0.4" y1="1.28" x2="0.6" y2="2.13" layer="51"/>
+<rectangle x1="1.4" y1="1.28" x2="1.6" y2="2.13" layer="51"/>
+<rectangle x1="2.4" y1="1.28" x2="2.6" y2="2.13" layer="51"/>
+<rectangle x1="3.4" y1="1.28" x2="3.6" y2="2.13" layer="51"/>
+<rectangle x1="4.4" y1="1.28" x2="4.6" y2="2.13" layer="51"/>
+<rectangle x1="5.4" y1="1.28" x2="5.6" y2="2.13" layer="51"/>
+<polygon width="0.2032" layer="21">
+<vertex x="-5.7" y="-3.47"/>
+<vertex x="-5.5" y="-3.87"/>
+<vertex x="-5.3" y="-3.47"/>
+</polygon>
+<rectangle x1="-9.3" y1="-2.7" x2="-7.1" y2="1.1" layer="1"/>
+<rectangle x1="7.1" y1="-2.7" x2="9.3" y2="1.1" layer="1"/>
+<wire x1="-8.295" y1="-2.27" x2="-7.795" y2="-2.27" width="0.2032" layer="51"/>
+<wire x1="7.795" y1="-2.27" x2="8.295" y2="-2.27" width="0.2032" layer="51"/>
+<rectangle x1="-9.4" y1="-2.8" x2="-7" y2="1.2" layer="29"/>
+<rectangle x1="-9.3" y1="-2.7" x2="-7.1" y2="1.1" layer="31"/>
+<rectangle x1="7" y1="-2.8" x2="9.4" y2="1.2" layer="29"/>
+<rectangle x1="7.1" y1="-2.7" x2="9.3" y2="1.1" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POGO_PIN">
@@ -247,6 +315,23 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <pin name="P$1" x="5.08" y="0" length="middle" rot="R180"/>
 <pin name="P$2" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <text x="-8.89" y="-1.27" size="2.286" layer="94" rot="R90" align="center">TC</text>
+</symbol>
+<symbol name="PINV">
+<wire x1="0" y1="0.254" x2="0" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.254" x2="1.016" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-0.254" x2="1.27" y2="0.254" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.254" x2="0" y2="0.254" width="0.1524" layer="94"/>
+<text x="2.032" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="PIN">
+<wire x1="0" y1="0.254" x2="0" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.254" x2="1.016" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-0.254" x2="1.27" y2="0.254" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.254" x2="0" y2="0.254" width="0.1524" layer="94"/>
+<text x="2.032" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -305,7 +390,47 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <technologies>
 <technology name="">
 <attribute name="MF" value="Keystone"/>
-<attribute name="MFP" value="3572" constant="no"/>
+<attribute name="MPN" value="3572" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FH12-12S-1S" prefix="X">
+<gates>
+<gate name="-1" symbol="PINV" x="2.54" y="27.94"/>
+<gate name="-2" symbol="PIN" x="2.54" y="25.4"/>
+<gate name="-3" symbol="PIN" x="2.54" y="22.86"/>
+<gate name="-4" symbol="PIN" x="2.54" y="20.32"/>
+<gate name="-5" symbol="PIN" x="2.54" y="17.78"/>
+<gate name="-6" symbol="PIN" x="2.54" y="15.24"/>
+<gate name="-7" symbol="PIN" x="2.54" y="12.7"/>
+<gate name="-8" symbol="PIN" x="2.54" y="10.16"/>
+<gate name="-9" symbol="PIN" x="2.54" y="7.62"/>
+<gate name="-10" symbol="PIN" x="2.54" y="5.08"/>
+<gate name="-11" symbol="PIN" x="2.54" y="2.54"/>
+<gate name="-12" symbol="PIN" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="FH12-12S-1SH">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-10" pin="1" pad="10"/>
+<connect gate="-11" pin="1" pad="11"/>
+<connect gate="-12" pin="1" pad="12"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-3" pin="1" pad="3"/>
+<connect gate="-4" pin="1" pad="4"/>
+<connect gate="-5" pin="1" pad="5"/>
+<connect gate="-6" pin="1" pad="6"/>
+<connect gate="-7" pin="1" pad="7"/>
+<connect gate="-8" pin="1" pad="8"/>
+<connect gate="-9" pin="1" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="Hirose Connector" constant="no"/>
+<attribute name="MPN" value="FH12-12S-1SH(55)" constant="no"/>
 </technology>
 </technologies>
 </device>
