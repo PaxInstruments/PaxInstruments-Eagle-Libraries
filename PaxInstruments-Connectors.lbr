@@ -1010,7 +1010,7 @@ Pogo pins- HW-11044</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PAX_MODULE" prefix="MOD">
+<deviceset name="PAX_MODULE" prefix="MODULE">
 <gates>
 <gate name="G$1" symbol="PAX_MODULE" x="0" y="0"/>
 </gates>
@@ -1033,7 +1033,11 @@ Pogo pins- HW-11044</description>
 <connect gate="G$1" pin="UART_TX" pad="P$14"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="Pax Instruments"/>
+<attribute name="MPN" value="PIxxxx"/>
+<attribute name="VALUE" value="PI-module-female"/>
+</technology>
 </technologies>
 </device>
 <device name="_EDGE_MALE_MODULE" package="M07X2_2MM_EDGE">
@@ -1054,7 +1058,11 @@ Pogo pins- HW-11044</description>
 <connect gate="G$1" pin="UART_TX" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="Pax Instruments"/>
+<attribute name="MPN" value="PIxxxx"/>
+<attribute name="VALUE" value="PI-module-male"/>
+</technology>
 </technologies>
 </device>
 </devices>
