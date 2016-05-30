@@ -11733,7 +11733,18 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="_AGND">
+<attribute name="VALUE" value="AGND" constant="no"/>
+</technology>
+<technology name="_DGND">
+<attribute name="VALUE" value="GND" constant="no"/>
+</technology>
+<technology name="_GND">
+<attribute name="VALUE" value="GND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
