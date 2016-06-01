@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -467,7 +467,7 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <smd name="P$4" x="1.55" y="5.9" dx="1.5" dy="1.5" layer="1" rot="R180"/>
 <smd name="P$5" x="-1.55" y="5.9" dx="1.5" dy="1.5" layer="1" rot="R180"/>
 </package>
-<package name="MICROSD_1">
+<package name="SD_MICRO_1">
 <wire x1="-6.35" y1="7.493" x2="7.493" y2="7.493" width="0.127" layer="21"/>
 <wire x1="7.493" y1="7.493" x2="7.493" y2="4.9619" width="0.127" layer="21"/>
 <wire x1="7.493" y1="4.9619" x2="7.309" y2="3.962" width="0.127" layer="21" curve="-20.855518"/>
@@ -566,14 +566,37 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <smd name="P$12" x="10" y="0" dx="1.27" dy="0.635" layer="16" rot="R90"/>
 <smd name="P$13" x="12" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <smd name="P$14" x="12" y="0" dx="1.27" dy="0.635" layer="16" rot="R90"/>
-<polygon width="0.127" layer="21">
-<vertex x="0" y="-1"/>
-<vertex x="-0.25" y="-1.5"/>
-<vertex x="0.25" y="-1.5"/>
-</polygon>
-<wire x1="-0.5" y1="1" x2="12.5" y2="1" width="0.1" layer="48"/>
-<wire x1="1" y1="1.25" x2="1" y2="0.75" width="0.75" layer="46"/>
-<wire x1="11" y1="1.25" x2="11" y2="0.5" width="0.75" layer="46"/>
+<wire x1="-0.5" y1="1" x2="0.6" y2="1" width="0.1" layer="48"/>
+<wire x1="0.6" y1="0.7" x2="1" y2="0.3" width="0.1" layer="48" curve="90"/>
+<wire x1="1" y1="0.3" x2="1.4" y2="0.7" width="0.1" layer="48" curve="90"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="1" width="0.1" layer="48"/>
+<wire x1="1.4" y1="1" x2="10.6" y2="1" width="0.1" layer="48"/>
+<wire x1="11.4" y1="1" x2="12.5" y2="1" width="0.1" layer="48"/>
+<wire x1="1" y1="1.1" x2="1" y2="0.75" width="0.75" layer="46"/>
+<wire x1="0.6" y1="1" x2="0.6" y2="0.7" width="0.1" layer="48"/>
+<wire x1="10.6" y1="0.7" x2="11" y2="0.3" width="0.1" layer="48" curve="90"/>
+<wire x1="11" y1="0.3" x2="11.4" y2="0.7" width="0.1" layer="48" curve="90"/>
+<wire x1="11.4" y1="0.7" x2="11.4" y2="1" width="0.1" layer="48"/>
+<wire x1="11" y1="1.1" x2="11" y2="0.75" width="0.75" layer="46"/>
+<wire x1="10.6" y1="1" x2="10.6" y2="0.7" width="0.1" layer="48"/>
+</package>
+<package name="PAD_1MM">
+<smd name="P$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<text x="-0.7" y="0" size="0.4" layer="25" rot="R180" align="center-left">&gt;NAME</text>
+<text x="0.7" y="0" size="0.4" layer="27" align="center-left">&gt;VALUE</text>
+</package>
+<package name="PAD_1.5MM">
+<smd name="P$1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100"/>
+<text x="-1" y="0" size="0.5" layer="25" rot="R180" align="center-left">&gt;NAME</text>
+<text x="1" y="0" size="0.5" layer="27" align="center-left">&gt;VALUE</text>
+</package>
+<package name="PAD_2MM">
+<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<text x="0" y="1.2" size="0.5" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.2" size="0.5" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="M01_TH">
+<pad name="P$1" x="0" y="0" drill="1.016" diameter="1.8796"/>
 </package>
 </packages>
 <symbols>
@@ -626,32 +649,32 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <text x="-5.08" y="15.748" size="1.27" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-0.508" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
-<symbol name="MICROSD">
-<wire x1="-12.7" y1="11.43" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="1.27" y2="12.7" width="0.254" layer="94"/>
-<wire x1="1.27" y1="12.7" x2="0" y2="11.43" width="0.254" layer="94"/>
-<wire x1="0" y1="11.43" x2="-1.27" y2="11.43" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="11.43" x2="-1.27" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="12.7" x2="-6.35" y2="11.43" width="0.254" layer="94"/>
-<wire x1="-6.35" y1="11.43" x2="-12.7" y2="11.43" width="0.254" layer="94"/>
-<pin name="DETECT" x="-15.24" y="-10.16" visible="pin" length="short"/>
-<pin name="SDIO_D3" x="-15.24" y="7.62" visible="pin" length="short"/>
-<pin name="SDIO_D1" x="-15.24" y="-7.62" visible="pin" length="short"/>
-<pin name="SDIO_D2" x="-15.24" y="10.16" visible="pin" length="short"/>
-<pin name="SDIO_CMD" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="SDIO_D0" x="-15.24" y="-5.08" visible="pin" length="short"/>
-<pin name="GND1" x="2.54" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="GND2" x="5.08" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="GND3" x="5.08" y="15.24" visible="pin" length="short" rot="R270"/>
-<pin name="GND4" x="2.54" y="15.24" visible="pin" length="short" rot="R270"/>
-<pin name="SDIO_CLK" x="-15.24" y="0" visible="pin" length="short"/>
-<pin name="VDD" x="-15.24" y="2.54" visible="pin" length="short"/>
-<pin name="VSS" x="-15.24" y="-2.54" visible="pin" length="short"/>
-<text x="-12.7" y="11.938" size="1.27" layer="95" ratio="10">&gt;NAME</text>
-<text x="-12.7" y="-13.208" size="1.27" layer="96" ratio="10" align="top-left">&gt;VALUE</text>
+<symbol name="SD_SDIO_4BIT">
+<wire x1="0" y1="24.13" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="13.97" y2="25.4" width="0.254" layer="94"/>
+<wire x1="13.97" y1="25.4" x2="12.7" y2="24.13" width="0.254" layer="94"/>
+<wire x1="12.7" y1="24.13" x2="11.43" y2="24.13" width="0.254" layer="94"/>
+<wire x1="11.43" y1="24.13" x2="11.43" y2="25.4" width="0.254" layer="94"/>
+<wire x1="11.43" y1="25.4" x2="7.62" y2="25.4" width="0.254" layer="94"/>
+<wire x1="7.62" y1="25.4" x2="6.35" y2="24.13" width="0.254" layer="94"/>
+<wire x1="6.35" y1="24.13" x2="0" y2="24.13" width="0.254" layer="94"/>
+<pin name="DETECT" x="-2.54" y="2.54" visible="pin" length="short"/>
+<pin name="SDIO_D3" x="-2.54" y="20.32" visible="pin" length="short"/>
+<pin name="SDIO_D1" x="-2.54" y="5.08" visible="pin" length="short"/>
+<pin name="SDIO_D2" x="-2.54" y="22.86" visible="pin" length="short"/>
+<pin name="SDIO_CMD" x="-2.54" y="17.78" visible="pin" length="short"/>
+<pin name="SDIO_D0" x="-2.54" y="7.62" visible="pin" length="short"/>
+<pin name="GND1" x="15.24" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="GND2" x="17.78" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="GND3" x="17.78" y="27.94" visible="pin" length="short" rot="R270"/>
+<pin name="GND4" x="15.24" y="27.94" visible="pin" length="short" rot="R270"/>
+<pin name="SDIO_CLK" x="-2.54" y="12.7" visible="pin" length="short"/>
+<pin name="VDD" x="-2.54" y="15.24" visible="pin" length="short"/>
+<pin name="VSS" x="-2.54" y="10.16" visible="pin" length="short"/>
+<text x="0" y="24.638" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="0" y="-0.508" size="1.27" layer="96" ratio="10" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="M03X2">
 <wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
@@ -746,6 +769,70 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <wire x1="2.54" y1="33.02" x2="-2.54" y2="33.02" width="0.254" layer="94"/>
 <text x="-2.54" y="33.528" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-0.508" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="M01">
+<pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
+<text x="1.524" y="0" size="1.27" layer="95" align="center-left">&gt;NAME</text>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="1.016" curve="-90"/>
+<vertex x="1.016" y="0" curve="-90"/>
+<vertex x="0" y="-1.016" curve="-90"/>
+<vertex x="-1.016" y="0" curve="-90"/>
+</polygon>
+</symbol>
+<symbol name="SD_SPI">
+<wire x1="0" y1="24.13" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="13.97" y2="25.4" width="0.254" layer="94"/>
+<wire x1="13.97" y1="25.4" x2="12.7" y2="24.13" width="0.254" layer="94"/>
+<wire x1="12.7" y1="24.13" x2="11.43" y2="24.13" width="0.254" layer="94"/>
+<wire x1="11.43" y1="24.13" x2="11.43" y2="25.4" width="0.254" layer="94"/>
+<wire x1="11.43" y1="25.4" x2="7.62" y2="25.4" width="0.254" layer="94"/>
+<wire x1="7.62" y1="25.4" x2="6.35" y2="24.13" width="0.254" layer="94"/>
+<wire x1="6.35" y1="24.13" x2="0" y2="24.13" width="0.254" layer="94"/>
+<pin name="DETECT" x="-2.54" y="2.54" visible="pin" length="short"/>
+<pin name="CS" x="-2.54" y="20.32" visible="pin" length="short" direction="in"/>
+<pin name="NC2" x="-2.54" y="5.08" visible="pin" length="short" direction="nc"/>
+<pin name="NC1" x="-2.54" y="22.86" visible="pin" length="short" direction="nc"/>
+<pin name="MOSI" x="-2.54" y="17.78" visible="pin" length="short" direction="in"/>
+<pin name="MISO" x="-2.54" y="7.62" visible="pin" length="short" direction="out"/>
+<pin name="GND1" x="15.24" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="GND2" x="17.78" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="GND3" x="17.78" y="27.94" visible="pin" length="short" rot="R270"/>
+<pin name="GND4" x="15.24" y="27.94" visible="pin" length="short" rot="R270"/>
+<pin name="CLK" x="-2.54" y="12.7" visible="pin" length="short" direction="in"/>
+<pin name="VDD" x="-2.54" y="15.24" visible="pin" length="short"/>
+<pin name="VSS" x="-2.54" y="10.16" visible="pin" length="short"/>
+<text x="0" y="24.638" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="0" y="-0.508" size="1.27" layer="96" ratio="10" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="SD_SDIO_1BIT">
+<wire x1="0" y1="24.13" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="13.97" y2="25.4" width="0.254" layer="94"/>
+<wire x1="13.97" y1="25.4" x2="12.7" y2="24.13" width="0.254" layer="94"/>
+<wire x1="12.7" y1="24.13" x2="11.43" y2="24.13" width="0.254" layer="94"/>
+<wire x1="11.43" y1="24.13" x2="11.43" y2="25.4" width="0.254" layer="94"/>
+<wire x1="11.43" y1="25.4" x2="7.62" y2="25.4" width="0.254" layer="94"/>
+<wire x1="7.62" y1="25.4" x2="6.35" y2="24.13" width="0.254" layer="94"/>
+<wire x1="6.35" y1="24.13" x2="0" y2="24.13" width="0.254" layer="94"/>
+<pin name="DETECT" x="-2.54" y="2.54" visible="pin" length="short"/>
+<pin name="NC2" x="-2.54" y="20.32" visible="pin" length="short" direction="nc"/>
+<pin name="NC3" x="-2.54" y="5.08" visible="pin" length="short"/>
+<pin name="NC1" x="-2.54" y="22.86" visible="pin" length="short" direction="nc"/>
+<pin name="SDIO_CMD" x="-2.54" y="17.78" visible="pin" length="short"/>
+<pin name="SDIO_D0" x="-2.54" y="7.62" visible="pin" length="short"/>
+<pin name="GND1" x="15.24" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="GND2" x="17.78" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="GND3" x="17.78" y="27.94" visible="pin" length="short" rot="R270"/>
+<pin name="GND4" x="15.24" y="27.94" visible="pin" length="short" rot="R270"/>
+<pin name="SDIO_CLK" x="-2.54" y="12.7" visible="pin" length="short"/>
+<pin name="VDD" x="-2.54" y="15.24" visible="pin" length="short"/>
+<pin name="VSS" x="-2.54" y="10.16" visible="pin" length="short"/>
+<text x="0" y="24.638" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="0" y="-0.508" size="1.27" layer="96" ratio="10" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -846,13 +933,13 @@ The latest version of this library can be downloaded from https://github.com/Pax
 </device>
 </devices>
 </deviceset>
-<deviceset name="MICROSD" prefix="SD">
+<deviceset name="SD_MICRO_SDIO_4BIT" prefix="SD">
 <description>Micro SD Card</description>
 <gates>
-<gate name="J" symbol="MICROSD" x="0" y="0"/>
+<gate name="J" symbol="SD_SDIO_4BIT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MICROSD_1">
+<device name="" package="SD_MICRO_1">
 <connects>
 <connect gate="J" pin="DETECT" pad="9"/>
 <connect gate="J" pin="GND1" pad="G1"/>
@@ -1032,6 +1119,99 @@ Pogo pins- HW-11044</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M01" prefix="TP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="M01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_PAD_1MM" package="PAD_1MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_PAD_1.5MM" package="PAD_1.5MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_PAD_2MM" package="PAD_2MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_TH" package="M01_TH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SD_MICRO_SPI">
+<gates>
+<gate name="G$1" symbol="SD_SPI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SD_MICRO_1">
+<connects>
+<connect gate="G$1" pin="CLK" pad="5"/>
+<connect gate="G$1" pin="CS" pad="2"/>
+<connect gate="G$1" pin="DETECT" pad="9"/>
+<connect gate="G$1" pin="GND1" pad="G1"/>
+<connect gate="G$1" pin="GND2" pad="G2"/>
+<connect gate="G$1" pin="GND3" pad="G3"/>
+<connect gate="G$1" pin="GND4" pad="G4"/>
+<connect gate="G$1" pin="MISO" pad="7"/>
+<connect gate="G$1" pin="MOSI" pad="3"/>
+<connect gate="G$1" pin="NC1" pad="1"/>
+<connect gate="G$1" pin="NC2" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SD_MICRO_SDIO_1BIT">
+<gates>
+<gate name="G$1" symbol="SD_SDIO_1BIT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SD_MICRO_1">
+<connects>
+<connect gate="G$1" pin="DETECT" pad="9"/>
+<connect gate="G$1" pin="GND1" pad="G1"/>
+<connect gate="G$1" pin="GND2" pad="G2"/>
+<connect gate="G$1" pin="GND3" pad="G3"/>
+<connect gate="G$1" pin="GND4" pad="G4"/>
+<connect gate="G$1" pin="NC1" pad="1"/>
+<connect gate="G$1" pin="NC2" pad="2"/>
+<connect gate="G$1" pin="NC3" pad="8"/>
+<connect gate="G$1" pin="SDIO_CLK" pad="5"/>
+<connect gate="G$1" pin="SDIO_CMD" pad="3"/>
+<connect gate="G$1" pin="SDIO_D0" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
