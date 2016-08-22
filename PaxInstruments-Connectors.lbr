@@ -775,18 +775,18 @@ The latest version of this library can be downloaded from https://github.com/Pax
 </symbol>
 <symbol name="PAX_MODULE">
 <pin name="3V3" x="-15.24" y="17.78" visible="pin" length="short" direction="pwr"/>
-<pin name="GND" x="15.24" y="17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND2" x="15.24" y="17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="SPI_MOSI" x="-15.24" y="15.24" visible="pin" length="short"/>
 <pin name="UART_RX" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
 <pin name="SPI_MISO" x="-15.24" y="12.7" visible="pin" length="short"/>
-<pin name="CAN_RX" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="CANL" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
 <pin name="SPI_SCK" x="-15.24" y="10.16" visible="pin" length="short"/>
-<pin name="CAN_TX" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="CANH" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
 <pin name="GPIO0" x="-15.24" y="7.62" visible="pin" length="short"/>
 <pin name="I2C_SDA" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
 <pin name="GPIO1" x="-15.24" y="5.08" visible="pin" length="short"/>
 <pin name="I2C_SCL" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="KEY" x="-15.24" y="2.54" visible="pin" length="short" direction="nc"/>
+<pin name="GND1" x="-15.24" y="2.54" visible="pin" length="short"/>
 <pin name="UART_TX" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
 <wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
 <wire x1="12.7" y1="20.32" x2="12.7" y2="0" width="0.254" layer="94"/>
@@ -1102,14 +1102,14 @@ Pogo pins- HW-11044</description>
 <device name="_EDGE_FEMALE_HOST" package="M07X2_2MM_EDGE">
 <connects>
 <connect gate="G$1" pin="3V3" pad="P$1"/>
-<connect gate="G$1" pin="CAN_RX" pad="P$4"/>
-<connect gate="G$1" pin="CAN_TX" pad="P$6"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="CANH" pad="P$6"/>
+<connect gate="G$1" pin="CANL" pad="P$4"/>
+<connect gate="G$1" pin="GND1" pad="P$13"/>
+<connect gate="G$1" pin="GND2" pad="P$2"/>
 <connect gate="G$1" pin="GPIO0" pad="P$9"/>
 <connect gate="G$1" pin="GPIO1" pad="P$11"/>
 <connect gate="G$1" pin="I2C_SCL" pad="P$10"/>
 <connect gate="G$1" pin="I2C_SDA" pad="P$8"/>
-<connect gate="G$1" pin="KEY" pad="P$13"/>
 <connect gate="G$1" pin="SPI_MISO" pad="P$5"/>
 <connect gate="G$1" pin="SPI_MOSI" pad="P$3"/>
 <connect gate="G$1" pin="SPI_SCK" pad="P$7"/>
@@ -1127,14 +1127,14 @@ Pogo pins- HW-11044</description>
 <device name="_EDGE_MALE_MODULE" package="M07X2_2MM_EDGE">
 <connects>
 <connect gate="G$1" pin="3V3" pad="P$13"/>
-<connect gate="G$1" pin="CAN_RX" pad="P$12"/>
-<connect gate="G$1" pin="CAN_TX" pad="P$10"/>
-<connect gate="G$1" pin="GND" pad="P$14"/>
+<connect gate="G$1" pin="CANH" pad="P$10"/>
+<connect gate="G$1" pin="CANL" pad="P$12"/>
+<connect gate="G$1" pin="GND1" pad="P$1"/>
+<connect gate="G$1" pin="GND2" pad="P$14"/>
 <connect gate="G$1" pin="GPIO0" pad="P$5"/>
 <connect gate="G$1" pin="GPIO1" pad="P$3"/>
 <connect gate="G$1" pin="I2C_SCL" pad="P$6"/>
 <connect gate="G$1" pin="I2C_SDA" pad="P$8"/>
-<connect gate="G$1" pin="KEY" pad="P$1"/>
 <connect gate="G$1" pin="SPI_MISO" pad="P$9"/>
 <connect gate="G$1" pin="SPI_MOSI" pad="P$11"/>
 <connect gate="G$1" pin="SPI_SCK" pad="P$7"/>
