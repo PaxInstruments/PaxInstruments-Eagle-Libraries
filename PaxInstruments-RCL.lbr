@@ -599,6 +599,9 @@ Schematic symbol for a fixed resistor.</description>
 <technology name="">
 <attribute name="VALUE" value="" constant="no"/>
 </technology>
+<technology name="_1.5K">
+<attribute name="VALUE" value="1.5K" constant="no"/>
+</technology>
 <technology name="_10K">
 <attribute name="VALUE" value="10K" constant="no"/>
 </technology>
