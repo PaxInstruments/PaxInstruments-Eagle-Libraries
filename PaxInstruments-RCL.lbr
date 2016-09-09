@@ -243,6 +243,7 @@ Schematic symbol for a fixed resistor.</description>
 </symbols>
 <devicesets>
 <deviceset name="RESISTOR_FIXED" prefix="R">
+<description>Resistor</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR_FIXED" x="0" y="0"/>
 </gates>
@@ -410,6 +411,7 @@ Schematic symbol for a fixed resistor.</description>
 </devices>
 </deviceset>
 <deviceset name="CAPACITOR_FIXED" prefix="C">
+<description>Capacitor</description>
 <gates>
 <gate name="G$1" symbol="CAPACITOR_FIXED" x="0" y="0"/>
 </gates>
@@ -577,6 +579,7 @@ Schematic symbol for a fixed resistor.</description>
 </devices>
 </deviceset>
 <deviceset name="RESISTOR_ARRAY" prefix="R">
+<description>Array of four resistors.</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR_FIXED" x="7.62" y="0" addlevel="always"/>
 <gate name="G$2" symbol="RESISTOR_FIXED" x="2.54" y="0" addlevel="always"/>

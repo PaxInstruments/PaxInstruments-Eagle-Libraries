@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -138,10 +138,10 @@ The latest version of this library can be downloaded from https://github.com/Pax
 &lt;b&gt;Licensing&lt;/b&gt;: To the extent possible under law, Pax Instruments has waived all copyright and related or neighboring rights to Pax Instruments Displays Eagle Libraries. This work is published from: United States. For further information see http://creativecommons.org/about/cc0</description>
 <packages>
 <package name="LG132643-DG">
-<wire x1="38.65" y1="-23.9" x2="-38.65" y2="-23.9" width="0.127" layer="21"/>
-<wire x1="-38.65" y1="-23.9" x2="-38.65" y2="23.9" width="0.127" layer="21"/>
-<wire x1="-38.65" y1="23.9" x2="38.65" y2="23.9" width="0.127" layer="21"/>
-<wire x1="38.65" y1="23.9" x2="38.65" y2="-23.9" width="0.127" layer="21"/>
+<wire x1="38.65" y1="-23.9" x2="-38.65" y2="-23.9" width="0.127" layer="51"/>
+<wire x1="-38.65" y1="-23.9" x2="-38.65" y2="23.9" width="0.127" layer="51"/>
+<wire x1="-38.65" y1="23.9" x2="38.65" y2="23.9" width="0.127" layer="51"/>
+<wire x1="38.65" y1="23.9" x2="38.65" y2="-23.9" width="0.127" layer="51"/>
 <hole x="-35" y="-18.75" drill="2"/>
 <hole x="35" y="-18.75" drill="2"/>
 <hole x="35" y="18.75" drill="2"/>
@@ -166,6 +166,10 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <rectangle x1="-11.5" y1="-24" x2="-8.5" y2="-23" layer="39" rot="R180"/>
 <rectangle x1="-39.65" y1="-2" x2="-38.65" y2="2" layer="40" rot="R180"/>
 <rectangle x1="38.65" y1="-2" x2="39.65" y2="2" layer="40" rot="R180"/>
+<wire x1="-7" y1="-15" x2="-7" y2="-24" width="0.127" layer="48"/>
+<wire x1="-7" y1="-15" x2="7" y2="-15" width="0.127" layer="48"/>
+<wire x1="7" y1="-15" x2="7" y2="-24" width="0.127" layer="48"/>
+<text x="-3" y="-22" size="1.27" layer="48">CABLE</text>
 </package>
 </packages>
 <symbols>

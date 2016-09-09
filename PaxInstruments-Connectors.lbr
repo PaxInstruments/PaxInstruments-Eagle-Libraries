@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -23,13 +23,13 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -475,15 +475,18 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <smd name="P$5" x="-1.55" y="5.9" dx="1.5" dy="1.5" layer="1" rot="R180"/>
 </package>
 <package name="SD_MICRO_1">
-<wire x1="-6.35" y1="7.493" x2="7.493" y2="7.493" width="0.127" layer="21"/>
-<wire x1="7.493" y1="7.493" x2="7.493" y2="4.9619" width="0.127" layer="21"/>
-<wire x1="7.493" y1="4.9619" x2="7.309" y2="3.962" width="0.127" layer="21" curve="-20.855518"/>
-<wire x1="7.309" y1="3.962" x2="6.477" y2="-0.5591" width="0.127" layer="21" curve="20.85427"/>
-<wire x1="6.477" y1="-0.5591" x2="6.477" y2="-7.493" width="0.127" layer="21"/>
-<wire x1="6.477" y1="-7.493" x2="-7.493" y2="-7.493" width="0.127" layer="21"/>
-<wire x1="-7.493" y1="-7.493" x2="-7.493" y2="6.096" width="0.127" layer="21"/>
-<wire x1="-7.493" y1="6.096" x2="-6.35" y2="6.096" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="6.096" x2="-6.35" y2="7.493" width="0.127" layer="21"/>
+<wire x1="-6.1" y1="7.5" x2="1.6" y2="7.5" width="0.127" layer="21"/>
+<wire x1="4.1" y1="7.5" x2="7.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="7.5" x2="7.5" y2="5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="5" x2="7.309" y2="3.962" width="0.127" layer="21" curve="-20.855518"/>
+<wire x1="7.309" y1="3.962" x2="6.5" y2="-0.5" width="0.127" layer="21" curve="20.85427"/>
+<wire x1="6.5" y1="-0.5" x2="6.5" y2="-7.4" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-7.4" x2="4.1" y2="-7.4" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-7.4" x2="-7.5" y2="-7.4" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-7.4" x2="-7.5" y2="-6.9" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="3" x2="-7.5" y2="5.9" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="5.9" x2="-6.1" y2="5.9" width="0.127" layer="21"/>
+<wire x1="-6.1" y1="5.9" x2="-6.1" y2="7.5" width="0.127" layer="21"/>
 <rectangle x1="-7.493" y1="-7.493" x2="7.493" y2="7.493" layer="39"/>
 <smd name="1" x="-7.493" y="2.414" dx="1.524" dy="0.762" layer="1"/>
 <smd name="2" x="-7.493" y="1.314" dx="1.524" dy="0.762" layer="1"/>
@@ -559,32 +562,30 @@ The latest version of this library can be downloaded from https://github.com/Pax
 </polygon>
 </package>
 <package name="M07X2_2MM_EDGE">
-<smd name="P$1" x="0" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="0" dx="1.27" dy="0.635" layer="16" rot="R90"/>
-<smd name="P$3" x="2" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$4" x="2" y="0" dx="1.27" dy="0.635" layer="16" rot="R90"/>
-<smd name="P$5" x="4" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$6" x="4" y="0" dx="1.27" dy="0.635" layer="16" rot="R90"/>
-<smd name="P$7" x="6" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$8" x="6" y="0" dx="1.27" dy="0.635" layer="16" rot="R90"/>
-<smd name="P$9" x="8" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$10" x="8" y="0" dx="1.27" dy="0.635" layer="16" rot="R90"/>
-<smd name="P$11" x="10" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$12" x="10" y="0" dx="1.27" dy="0.635" layer="16" rot="R90"/>
-<smd name="P$13" x="12" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$14" x="12" y="0" dx="1.27" dy="0.635" layer="16" rot="R90"/>
+<smd name="P$1" x="0" y="-0.25" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="-0.25" dx="2" dy="0.75" layer="16" rot="R90"/>
+<smd name="P$3" x="2" y="-0.25" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="P$4" x="2" y="-0.25" dx="2" dy="0.75" layer="16" rot="R90"/>
+<smd name="P$5" x="4" y="-0.25" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="P$6" x="4" y="-0.25" dx="2" dy="0.75" layer="16" rot="R90"/>
+<smd name="P$7" x="6" y="-0.25" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="P$8" x="6" y="-0.25" dx="2" dy="0.75" layer="16" rot="R90"/>
+<smd name="P$9" x="8" y="-0.25" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="P$10" x="8" y="-0.25" dx="2" dy="0.75" layer="16" rot="R90"/>
+<smd name="P$11" x="10" y="-0.25" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="P$12" x="10" y="-0.25" dx="2" dy="0.75" layer="16" rot="R90"/>
+<smd name="P$13" x="12" y="-0.25" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="P$14" x="12" y="-0.25" dx="2" dy="0.75" layer="16" rot="R90"/>
 <wire x1="-0.5" y1="1" x2="0.6" y2="1" width="0.1" layer="48"/>
 <wire x1="0.6" y1="0.7" x2="1" y2="0.3" width="0.1" layer="48" curve="90"/>
 <wire x1="1" y1="0.3" x2="1.4" y2="0.7" width="0.1" layer="48" curve="90"/>
 <wire x1="1.4" y1="0.7" x2="1.4" y2="1" width="0.1" layer="48"/>
 <wire x1="1.4" y1="1" x2="10.6" y2="1" width="0.1" layer="48"/>
 <wire x1="11.4" y1="1" x2="12.5" y2="1" width="0.1" layer="48"/>
-<wire x1="1" y1="1.1" x2="1" y2="0.75" width="0.75" layer="46"/>
 <wire x1="0.6" y1="1" x2="0.6" y2="0.7" width="0.1" layer="48"/>
 <wire x1="10.6" y1="0.7" x2="11" y2="0.3" width="0.1" layer="48" curve="90"/>
 <wire x1="11" y1="0.3" x2="11.4" y2="0.7" width="0.1" layer="48" curve="90"/>
 <wire x1="11.4" y1="0.7" x2="11.4" y2="1" width="0.1" layer="48"/>
-<wire x1="11" y1="1.1" x2="11" y2="0.75" width="0.75" layer="46"/>
 <wire x1="10.6" y1="1" x2="10.6" y2="0.7" width="0.1" layer="48"/>
 </package>
 <package name="PAD_1MM">
@@ -774,20 +775,20 @@ The latest version of this library can be downloaded from https://github.com/Pax
 <text x="-5.08" y="-0.508" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="PAX_MODULE">
-<pin name="3V3" x="-15.24" y="17.78" visible="pin" length="short" direction="pwr"/>
-<pin name="GND2" x="15.24" y="17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="3V3_A" x="-15.24" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="GND_A" x="15.24" y="17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="SPI_MOSI" x="-15.24" y="15.24" visible="pin" length="short"/>
-<pin name="UART_RX" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="I2C_SDA" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
 <pin name="SPI_MISO" x="-15.24" y="12.7" visible="pin" length="short"/>
-<pin name="CANL" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="UART_RX" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
 <pin name="SPI_SCK" x="-15.24" y="10.16" visible="pin" length="short"/>
-<pin name="CANH" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO0" x="-15.24" y="7.62" visible="pin" length="short"/>
-<pin name="I2C_SDA" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="GPIO1" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="UART_TX" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO1" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="VBUS" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO2" x="-15.24" y="5.08" visible="pin" length="short"/>
 <pin name="I2C_SCL" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="GND1" x="-15.24" y="2.54" visible="pin" length="short"/>
-<pin name="UART_TX" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="3V3_B" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="GND_B" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
 <wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
 <wire x1="12.7" y1="20.32" x2="12.7" y2="0" width="0.254" layer="94"/>
 <wire x1="12.7" y1="0" x2="-12.7" y2="0" width="0.254" layer="94"/>
@@ -950,6 +951,7 @@ The latest version of this library can be downloaded from https://github.com/Pax
 </devices>
 </deviceset>
 <deviceset name="USB_MICRO">
+<description>MicroUSB connector</description>
 <gates>
 <gate name="G$1" symbol="USB_MICRO" x="-2.54" y="0"/>
 </gates>
@@ -973,6 +975,7 @@ The latest version of this library can be downloaded from https://github.com/Pax
 </devices>
 </deviceset>
 <deviceset name="BL-XX_BATTERY">
+<description>Battery connector. Used with BL-4C, BL-5C, and similar three terminal batteries.</description>
 <gates>
 <gate name="G$1" symbol="BATTERY_BL-5C" x="5.08" y="-5.08"/>
 </gates>
@@ -1101,20 +1104,20 @@ Pogo pins- HW-11044</description>
 <devices>
 <device name="_EDGE_FEMALE_HOST" package="M07X2_2MM_EDGE">
 <connects>
-<connect gate="G$1" pin="3V3" pad="P$1"/>
-<connect gate="G$1" pin="CANH" pad="P$6"/>
-<connect gate="G$1" pin="CANL" pad="P$4"/>
-<connect gate="G$1" pin="GND1" pad="P$13"/>
-<connect gate="G$1" pin="GND2" pad="P$2"/>
-<connect gate="G$1" pin="GPIO0" pad="P$9"/>
-<connect gate="G$1" pin="GPIO1" pad="P$11"/>
+<connect gate="G$1" pin="3V3_A" pad="P$1"/>
+<connect gate="G$1" pin="3V3_B" pad="P$13"/>
+<connect gate="G$1" pin="GND_A" pad="P$2"/>
+<connect gate="G$1" pin="GND_B" pad="P$14"/>
+<connect gate="G$1" pin="GPIO1" pad="P$9"/>
+<connect gate="G$1" pin="GPIO2" pad="P$11"/>
 <connect gate="G$1" pin="I2C_SCL" pad="P$10"/>
-<connect gate="G$1" pin="I2C_SDA" pad="P$8"/>
+<connect gate="G$1" pin="I2C_SDA" pad="P$12"/>
 <connect gate="G$1" pin="SPI_MISO" pad="P$5"/>
 <connect gate="G$1" pin="SPI_MOSI" pad="P$3"/>
 <connect gate="G$1" pin="SPI_SCK" pad="P$7"/>
-<connect gate="G$1" pin="UART_RX" pad="P$12"/>
-<connect gate="G$1" pin="UART_TX" pad="P$14"/>
+<connect gate="G$1" pin="UART_RX" pad="P$4"/>
+<connect gate="G$1" pin="UART_TX" pad="P$6"/>
+<connect gate="G$1" pin="VBUS" pad="P$8"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1126,20 +1129,20 @@ Pogo pins- HW-11044</description>
 </device>
 <device name="_EDGE_MALE_MODULE" package="M07X2_2MM_EDGE">
 <connects>
-<connect gate="G$1" pin="3V3" pad="P$13"/>
-<connect gate="G$1" pin="CANH" pad="P$10"/>
-<connect gate="G$1" pin="CANL" pad="P$12"/>
-<connect gate="G$1" pin="GND1" pad="P$1"/>
-<connect gate="G$1" pin="GND2" pad="P$14"/>
-<connect gate="G$1" pin="GPIO0" pad="P$5"/>
-<connect gate="G$1" pin="GPIO1" pad="P$3"/>
+<connect gate="G$1" pin="3V3_A" pad="P$13"/>
+<connect gate="G$1" pin="3V3_B" pad="P$1"/>
+<connect gate="G$1" pin="GND_A" pad="P$14"/>
+<connect gate="G$1" pin="GND_B" pad="P$2"/>
+<connect gate="G$1" pin="GPIO1" pad="P$5"/>
+<connect gate="G$1" pin="GPIO2" pad="P$3"/>
 <connect gate="G$1" pin="I2C_SCL" pad="P$6"/>
-<connect gate="G$1" pin="I2C_SDA" pad="P$8"/>
+<connect gate="G$1" pin="I2C_SDA" pad="P$4"/>
 <connect gate="G$1" pin="SPI_MISO" pad="P$9"/>
 <connect gate="G$1" pin="SPI_MOSI" pad="P$11"/>
 <connect gate="G$1" pin="SPI_SCK" pad="P$7"/>
-<connect gate="G$1" pin="UART_RX" pad="P$4"/>
-<connect gate="G$1" pin="UART_TX" pad="P$2"/>
+<connect gate="G$1" pin="UART_RX" pad="P$12"/>
+<connect gate="G$1" pin="UART_TX" pad="P$10"/>
+<connect gate="G$1" pin="VBUS" pad="P$8"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1192,6 +1195,7 @@ Pogo pins- HW-11044</description>
 </devices>
 </deviceset>
 <deviceset name="M01" prefix="TP" uservalue="yes">
+<description>Single contact</description>
 <gates>
 <gate name="G$1" symbol="M01" x="0" y="0"/>
 </gates>
