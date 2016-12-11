@@ -269,6 +269,9 @@ Schematic symbol for a fixed resistor.</description>
 <technology name="_10K">
 <attribute name="VALUE" value="10K" constant="no"/>
 </technology>
+<technology name="_2.32K">
+<attribute name="VALUE" value="2.32K" constant="no"/>
+</technology>
 <technology name="_22R">
 <attribute name="VALUE" value="22R" constant="no"/>
 </technology>
@@ -300,6 +303,9 @@ Schematic symbol for a fixed resistor.</description>
 </technology>
 <technology name="_10K">
 <attribute name="VALUE" value="10K" constant="no"/>
+</technology>
+<technology name="_2.32K">
+<attribute name="VALUE" value="2.32K" constant="no"/>
 </technology>
 <technology name="_22R">
 <attribute name="VALUE" value="22R" constant="no"/>
@@ -333,6 +339,9 @@ Schematic symbol for a fixed resistor.</description>
 <technology name="_10K">
 <attribute name="VALUE" value="10K" constant="no"/>
 </technology>
+<technology name="_2.32K">
+<attribute name="VALUE" value="2.32K" constant="no"/>
+</technology>
 <technology name="_22R">
 <attribute name="VALUE" value="22R" constant="no"/>
 </technology>
@@ -365,6 +374,9 @@ Schematic symbol for a fixed resistor.</description>
 <technology name="_10K">
 <attribute name="VALUE" value="10K" constant="no"/>
 </technology>
+<technology name="_2.32K">
+<attribute name="VALUE" value="2.32K" constant="no"/>
+</technology>
 <technology name="_22R">
 <attribute name="VALUE" value="22R" constant="no"/>
 </technology>
@@ -396,6 +408,9 @@ Schematic symbol for a fixed resistor.</description>
 </technology>
 <technology name="_10K">
 <attribute name="VALUE" value="10K" constant="no"/>
+</technology>
+<technology name="_2.32K">
+<attribute name="VALUE" value="2.32K" constant="no"/>
 </technology>
 <technology name="_22R">
 <attribute name="VALUE" value="22R" constant="no"/>
