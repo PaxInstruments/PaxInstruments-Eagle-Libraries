@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -256,7 +256,7 @@ Standard 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP73831" prefix="U">
+<deviceset name="MCP73831/2" prefix="U">
 <description>Miniature single cell, fully integrated Li-Ion, Li-polymer charge management controller&lt;br&gt;
 http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf&lt;br&gt;
 IC-09995</description>
