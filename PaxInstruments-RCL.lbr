@@ -644,7 +644,7 @@ Schematic symbol for a fixed resistor.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FUSE_RESETTABLE_PTC">
+<deviceset name="FUSE_RESETTABLE_PTC" prefix="F">
 <gates>
 <gate name="G$1" symbol="FUSE_RESETTABLE" x="0" y="0"/>
 </gates>
@@ -657,6 +657,9 @@ Schematic symbol for a fixed resistor.</description>
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="_1000MA">
+<attribute name="VALUE" value="1000mA" constant="no"/>
 </technology>
 <technology name="_100MA">
 <attribute name="VALUE" value="100mA" constant="no"/>
@@ -693,6 +696,9 @@ Schematic symbol for a fixed resistor.</description>
 <technology name="">
 <attribute name="VALUE" value="" constant="no"/>
 </technology>
+<technology name="_1000MA">
+<attribute name="VALUE" value="1000mA" constant="no"/>
+</technology>
 <technology name="_100MA">
 <attribute name="VALUE" value="100mA" constant="no"/>
 </technology>
@@ -727,6 +733,9 @@ Schematic symbol for a fixed resistor.</description>
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="_1000MA">
+<attribute name="VALUE" value="1000mA" constant="no"/>
 </technology>
 <technology name="_100MA">
 <attribute name="VALUE" value="100mA" constant="no"/>
@@ -763,6 +772,9 @@ Schematic symbol for a fixed resistor.</description>
 <technology name="">
 <attribute name="VALUE" value="" constant="no"/>
 </technology>
+<technology name="_1000MA">
+<attribute name="VALUE" value="1000mA" constant="no"/>
+</technology>
 <technology name="_100MA">
 <attribute name="VALUE" value="100mA" constant="no"/>
 </technology>
@@ -797,6 +809,9 @@ Schematic symbol for a fixed resistor.</description>
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="_1000MA">
+<attribute name="VALUE" value="1000mA" constant="no"/>
 </technology>
 <technology name="_100MA">
 <attribute name="VALUE" value="100mA" constant="no"/>
